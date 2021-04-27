@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form</title>
+	<link rel="shortcut icon" type="image" href="../images/fairy_mart_logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../js/validate.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<div class="header">
+		<img src="../images/fairy_mart_logo.png" />
+		<h1>Fairy Mart</h1>
+		<p>Welcome to Fairy Mart ! &#128512; </p>
+	</div>
+
+	<div class="navbar">
+		<a href="register.html" class="right">Register <i class="fa fa-user-plus"></i></a>
+		<a href="../index.html" class="right">Home <i class="fa fa-home"></i></a>
+	</div>
+
+	<div class="main">
+		<h2>Log In Account</h2>
+		<div class="container">
+			<form name="loginForm" action="../php/login.php" onsubmit="return validateLoginForm()" method="post">
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-envelope"></i>
+						<label for="femail">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Your Email..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-lock"></i>
+						<label for="lname">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="password" placeholder="Your Password..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-75">
+						<div>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Remember Me
+							</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<input type="submit" value="Login" >
+				</div>
+				<br>
+				<div class="forgotpassword">
+					<a href="#forgotpassword">Forgot Password ? </a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+		<footer>&copy; Copyright 2021 Fairy Mart. Design By Angela</footer>
+	</div>
+
+</body>
+
+</html>
